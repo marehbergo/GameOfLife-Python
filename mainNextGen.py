@@ -14,6 +14,7 @@ vizinhos = []   #cria uma matriz para armazenar o número de vizinhos
 
 tamanho = raw_input('qual o tamanho do seu mundo?')   #o usuário escolhe o tamanho da matriz mundo
 
+#preenche a matriz com 0s ou 1s de modo aleatorio
 for i in range(int(tamanho)):
   linha = []   #cria uma linha na matriz
   
@@ -21,6 +22,8 @@ for i in range(int(tamanho)):
     linha.append(random.randint(0,1))   #preenche cada posição da linha com 0 ou 1 randomicamente
   
   mundo.append(linha)   #insere na matriz a linha preenchida
+
+#---------------------------------------------------------------------------------------------------
 
 for i in range(len(mundo)):   #percorre as linhas da matriz mundo
   linha = []
